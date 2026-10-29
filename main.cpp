@@ -11,11 +11,23 @@ int main() {
     cout << "   WELCOME TO CYBER STEPS LAB SYSTEM     " << endl;
     cout << "==========================================" << endl;
 
-    string username;
-    cout << "Enter your Username: ";
-    cin >> username;
+string Username;
+string cyberField;
 
-    cout << "\n[+] User " << username << " successfully registered in the system!" << endl;
+cout<<" enter your Username "<<endl;
+getline(cin, Username);
 
-    return 0;
-}
+cout<<"***********\n";
+
+cout << " enter your cyberField  "<<endl;
+getline (cin, cyberField);
+
+
+cout<<"****************************************\n";
+cout << "Welcome to CyberStepsAcademy!" << endl;
+cout<<"Username ="<<Username<<endl;
+cout<<"cyberField ="<<cyberField<<endl;
+
+return 0;
+
+    
