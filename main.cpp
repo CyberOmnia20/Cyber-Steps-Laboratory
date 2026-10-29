@@ -17,17 +17,16 @@ string cyberField;
 cout<<" enter your Username "<<endl;
 getline(cin, Username);
 
-cout<<"***********\n";
+cout<<"_______________________\n";
 
 cout << " enter your cyberField  "<<endl;
 getline (cin, cyberField);
 
 
-cout<<"****************************************\n";
+cout<<"________________________________________________\n";
 cout << "Welcome to CyberStepsAcademy!" << endl;
 cout<<"Username ="<<Username<<endl;
 cout<<"cyberField ="<<cyberField<<endl;
 
 return 0;
-
-    
+}
