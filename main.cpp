@@ -1,32 +1,40 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 int main() {
-    // CyberStepsAcademy - Cyber Steps Laboratory
-    // Challenge #01 Starter Code
-    
-    cout << "==========================================" << endl;
-    cout << "   WELCOME TO CYBER STEPS LAB SYSTEM     " << endl;
-    cout << "==========================================" << endl;
+    // 1. فحص حالة الطوارئ (System Lockdown)
+    bool isEmergency = false; 
 
-string Username;
-string cyberField;
+    if (isEmergency) {
+        cout << "[-] SYSTEM LOCKDOWN: Access Blocked!" << endl;
+    } 
+    else {
+        // 2. التحقق من السن القانوني (Age Validation)
+        int age;
+        cout << "Enter your age: ";
+        cin >> age;
 
-cout<<" enter your Username "<<endl;
-getline(cin, Username);
+        if (age < 18) {
+            cout << "[-] Access Denied: Minimum age requirement not met." << endl;
+        } 
+        else {
+            // 3. المصادقة والصلاحيات (Authentication & Authorization)
+            string password;
+            cout << "Enter password: ";
+            cin >> password;
 
-cout<<"_______________________\n";
+            if (password == "Admin123") {
+                cout << "[+] Access Granted: Administrator Level." << endl;
+            } 
+            else if (password == "User123") {
+                cout << "[+] Access Granted: Standard User Level." << endl;
+            } 
+            else {
+                cout << "[-] Access Denied: Invalid Password!" << endl;
+            }
+        }
+    }
 
-cout << " enter your cyberField  "<<endl;
-getline (cin, cyberField);
-
-
-cout<<"________________________________________________\n";
-cout << "Welcome to CyberStepsAcademy!" << endl;
-cout<<"Username ="<<Username<<endl;
-cout<<"cyberField ="<<cyberField<<endl;
-
-return 0;
+    return 0;
 }
